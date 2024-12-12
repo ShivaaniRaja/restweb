@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar Styles */
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo h1 {
+            color: white;
+            font-size: 2rem;
+        }
+
+        nav .nav-links {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav .nav-links li {
+            margin: 0 15px;
+        }
+
+        nav .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav .nav-links a:hover {
+            background-color: #555;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #582e2e;
+            color: rgb(8, 8, 8);
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        .offer-banner {
+            position: relative;
+            background-image: url('offerbackground.jpg'); /* replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 550px;
+        }
+
+        .offer-text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: rgba(13, 12, 13, 0.41);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        .offer-text h2 {
+            font-size: 2rem;
+        }
+
+        .info-cards {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            background-color: #582e2e;
+        }
+
+        .card {
+            background-color: #899a35;
+            width: 30%;
+            padding: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1px;
+        }
+
+        .card p {
+            font-size: 1.2rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #5a5656;
+            color: white;
+            margin-top: 1px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <h1>Rivaura Restaurant</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+            <li><a href="admin.html">Admin</a></li>
+            <li><a href="booktable.html">Book a Table</a></li>
+            <li><a href="menue.html">Menue</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Rivaura Restaurant</h1>
+    </header>
+
+    <!-- Offer Banner Section -->
+    <section class="offer-banner">
+        <div class="offer-text">
+            <h2>Special Offer: 20% Off on Your First Visit!</h2>
+        </div>
+    </section>
+
+    <!-- Info Cards Section -->
+    <section class="info-cards">
+        <div class="card">
+            <h3>Menu</h3>
+            <p>Explore our delicious offerings.</p>
+        </div>
+        <div class="card">
+            <h3>Book a Table</h3>
+            <p>Reserve your spot today!</p>
+        </div>
+        <div class="card">
+            <h3>Opening Hours</h3>
+            <p>We are open every day from 9 AM to 10 PM.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>R.Shivaani (24007075)</p>
+    </footer>
+
+</body>
+</html>
+
+

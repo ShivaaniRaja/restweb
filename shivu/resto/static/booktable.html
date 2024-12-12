@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(71, 55, 42);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .booking {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #8b5a41;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+        .booking h1 {
+            text-align: center;
+            color: #171616;
+        }
+        .booking form {
+            display: flex;
+            flex-direction: column;
+        }
+        .booking label {
+            margin: 10px 0 5px;
+            color: #0f0e0e;
+        }
+        .booking input, .booking select, .booking button {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .booking button {
+            background-color: #724a35;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .booking button:hover {
+            background-color: #218838;
+        }
+        .offers {
+            margin-top: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-left: 4px solid #28a745;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="booking">
+        <h1>Book a Table</h1>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Number of Guests</label>
+            <select id="guests" name="guests" required>
+                <option value="">Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+
+        <div class="offers">
+            <h3>Special Offers</h3>
+            <p>Get 10% off on your first booking!</p>
+            <p>Book for a group of 6 or more and receive a complimentary dessert for everyone!</p>
+        </div>
+    </div>
+</body>
+</html>
